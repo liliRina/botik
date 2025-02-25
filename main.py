@@ -45,8 +45,4 @@ def check_sex(message):
         bot.send_message(message.chat.id, response)
         bot.send_sticker(message.chat.id, random.choice(NAHUI_STICKERS))
 
-@bot.message_handler(func=lambda msg: True)
-def echo_all(message):
-    bot.reply_to(message, message.text)
-
 bot.polling()
