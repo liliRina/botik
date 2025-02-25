@@ -15,6 +15,6 @@ def register_commands(bot: TeleBot):
         BotCommand("hello", "Hello"),
     ]
     
-    bot.set_my_commands(commands)
+    #bot.set_my_commands(commands)
 
 register_commands(bot)
